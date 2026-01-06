@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional, Dict, Any
+from typing import List, Optional
 
 # Ingest 스키마
 class NewsIngestRequest(BaseModel):

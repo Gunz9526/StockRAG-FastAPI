@@ -12,7 +12,7 @@ async def chat_rag_endpoint(
     db: AsyncSession = Depends(get_db)
 ):
     """
-    RAG 기반 챗봇 엔드포인트
+    - RAG 기반 챗봇 엔드포인트
     - query: 사용자의 질문
     - symbol: (선택사항) 주식 심볼
     """

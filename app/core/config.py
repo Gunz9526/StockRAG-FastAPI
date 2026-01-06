@@ -6,9 +6,11 @@ class Settings(BaseSettings):
     DATABASE_URL: str
 
     EMBEDDING_MODEL : str = "models/text-embedding-004"
-    LLM_MODEL : str = "gemini-2.5-flash"
+    LLM_MODEL : str = "gemini-3-flash-preview"
 
-    TRADING_SYSTEM_URL: str = "http://host.docker.internal:8000"
+    #TRADING_SYSTEM_URL: str = "http://host.docker.internal:8000"
+    TRADING_SYSTEM_URL: str = "http://localhost:8000/api/v1/rag"
+    TRADING_SYSTEM_API_KEY: str
 
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
